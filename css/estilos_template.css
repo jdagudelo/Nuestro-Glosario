@@ -1,0 +1,113 @@
+/* ----- estilos_templates.css -------- */ 
+
+.ContenidoCabecera {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+	width: 100%;
+	background: lightcoral ;
+}
+
+.CajaEnlaceUnidad {
+    display: flex; 
+    justify-content: space-between;
+    height: 180px;
+	width: 460px;
+	padding: 1%;
+	margin: 1%;	
+    vertical-align: top;	
+	background: lightseagreen ;	
+}
+
+
+.Contenido1{
+    display: flex;
+    justify-content: space-between;
+}
+
+#PanelUnidades{
+  display: flex;  
+  flex-wrap: wrap;
+  align-content: space-between;
+  /*justify-content: space-between; */
+  background: #CCFFFF ;	
+}
+
+#Compe_Presentacion{
+	height: 200px;
+	width: 50%;
+	padding: 2%;
+	margin: 2%;
+	background: lightcyan ;
+}
+
+#Compe_Figura1{
+	height: 200px;
+	width: 50%;
+	padding: 2%;
+	margin: 2%;
+	background: lightsalmon ;
+}
+
+#Unidad_Presentacion{
+	height: 200px;
+	width: 50%;
+	padding: 2%;
+	margin: 2%;
+	background: lightskyblue ;
+}
+
+#Unidad_Figura1{
+	height: 200px;
+	width: 50%;
+	padding: 2%;
+	margin: 2%;
+	background: lightseagreen ;
+}
+
+.CajaEnlaceUnidad_Figura2{
+	height: 90%;
+	width: 25%;
+	padding: 2%;
+	margin: 2%;
+	background: red ;
+}
+
+.CajaEnlaceUnidad_Figura1{
+	height: 90%;
+	width: 30%;
+	padding: 1%;
+	margin: 1%;
+	background: lightsalmon ;
+}
+
+.CajaEnlaceUnidad_Grupo{
+	height: 90%;
+	width: 70%;
+	padding: 1%;
+	margin: 1%;
+	background: lightcyan;
+	border: 1px solid red;
+    display: flex;	
+    justify-content: space-between; 
+}
+
+.CajaEnlaceUnidad_Numero{
+	background: #0000ff;
+	color: white;
+	width:98%;
+}
+
+.CajaEnlaceUnidad_Titulo{
+	background: #00a0a0;
+	color: white; 
+	width:98%;
+}
+
+.Ref_Unidad_Icono {
+
+}
+
+.Ref_Unidad_Titulo {
+
+}

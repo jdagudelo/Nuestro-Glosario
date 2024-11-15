@@ -1,0 +1,142 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+
+img {
+    display:block;
+    margin:auto;
+}
+    
+nav{ 
+    background: rgba(35, 235, 95, 0.712); 
+    float: left; 
+    width: 100%; 
+    height: 60px; 
+ } 
+    
+nav ul li{ 
+    display: inline-block; 
+    margin: 5px; 
+} 
+    
+nav ul li a{ 
+    color: red; 
+    font-size: 17px; 
+    text-decoration: none; 
+    transition: .3s; 
+} 
+    
+nav ul li a:hover{ 
+    font-size: 25px; 
+    color: black; 
+}
+
+
+.DefProyecto {
+    font-size: 1.15em;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Tabla de contenidos */
+#tabla-contenidos {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#tabla-contenidos h2 {
+    color: #4a90e2;
+}
+
+#tabla-contenidos ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#tabla-contenidos ul li {
+    margin: 8px 0;
+}
+
+#tabla-contenidos ul li a {
+    text-decoration: none;
+    color: #4a90e2;
+}
+
+/* Sección Capítulo */
+section {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #e2f0d9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Titulo1 {
+    color: #3a743d;
+}
+
+/* Subcapítulos */
+.SubCapituloTema {
+    background-color: #d9e2f0;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Subtitulo1 {
+    color: #365c91;
+}
+
+.Subtitulo2 {
+    color: #b26a3c;
+}
+
+/* Párrafos */
+.Parrafo1 {
+    font-size: 1.15em;
+}
+
+.Parrafo2 {
+    font-size: 1.15em;
+    font-style: italic;
+}
+
+/* Botón */
+button {
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #3a74c2;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #tabla-contenidos, section {
+        margin: 10px;
+        padding: 15px;
+    }
+}
