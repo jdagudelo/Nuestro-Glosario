@@ -1,65 +1,257 @@
-<!----- Inciamos nuestro primer cógigo HTML de nuestro grlosario personal, con una actividad muy interesante  -->
+<!DOCTYPE html>
 <html lang="es">
-     <head>
-          <link rel="shortcut icon" href="imagenes/icon_ucun.png">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <meta content="text/html; charset=utf-8" http-equiv="content-type">
-          <meta name="author" content="David Agudelo">
-          <meta name="description" content="Pagina WEB de mi glosario personal, correspondiente a la asignatura de Sistemas ingenieria mecatronica, ingeniería de sistemas, UDEC">
 
-          <meta name="keywords" content="Glosario, web, Microprocesadores, Ingeniería, Sistemas, Udec, Ucun, Universidad, mecatronica">
-          <title>Proyecto Mecatronica</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-          <link rel="stylesheet" href="css/estilos.css">
-     </head>
+    <!--  manejo y configuración del caché del equipo para esta página -->
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
 
-     <body>
+    <!-- "viewport"  permite tomar y configura la pantalla --> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Mecatrónica</title>
 
-          <header>
-               <img src="imagenes/logo_ucun_1_75.png">
-               <h1>Menu Glosario de terminos Ingenieria Mecatronica</h1>
-               <h2>Por:  David Agudelo y Sheccid Avila</h2>
-               <br><hr><br>
-          </header>
-          <nav>
-               <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="glosario_fundamentos_de_ingenieria.html">Glosario Fundamentos de Ingenieria</a></li>
-                    <li><a href="glosario_pensamiento_algoritmico.html">Glosario Pensamiento algoritmico</a></li>
-                    <li><a href="glosario_tgs.html">Glosario TGS</a></li>
-               </ul>
-          </nav>
-          <article descripcionProyecto>
-               <h2>Del ambiente al cerebro</h2>
-               <p>Este proyecto tiene un enfoque humano, queremos aportar mediante la serendipia de la elaboración de este taller, formas de apoyar una industria que busca el mejoramiento de la calidad de vida de personas con desventajas naturales.
+    <!--  Definiciones ícono favorito --- favicon.ico --->
+    <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="./imagenes/icon/favicon.ico" type="image/x-icon"> 
 
-                    La insuficiencia o la pérdida de algunos de nuestros sentidos es algo que no podremos comprender en carne propia y que no deberíamos por supuesto, pero para algunas personas no hay opción, ya sea por accidentes o situaciones en su adn y malformaciones, algunas personas no ven ni sienten el mundo como lo hacemos nosotros, lo que supone una desventaja que queremos convertir o complementar en una súper habilidad, la transhumanización es una camino ya amplio y bien digerido por la academia mundial y es un adelanto importante en la simbiosis humano máquina. Aprovechandonos de los grandes saltos académicos en esta área queremos comprender, atender y apoyar la ingeniería detrás de la digitalización de fenómenos ambientales y físicos para luego ser incorporados dentro de un cerebro humano y ser correctamente codificados para que este cerebro decodifica esta información como algo natural, de ser posible mejorado o amplificado.
+    <link rel="apple-touch-icon" sizes="120x120" href="./imagenes/icon/apple-touch-icon.png">
+    <link rel="manifest" href="./imagenes/icon/site.webmanifest">
+    <link rel="mask-icon" href="./imagenes/icon/safari-pinned-tab.svg" color="#5bbad5">
 
-                    Nuestro campo de acción es la escucha humana, la captación de ondas de sonido en el ambiente tal cual lo haría un oído humano pero por medio de un micrófono, procesar esta información y luego inyectarla en los receptores encargados de entender estas señales, para que personas con pérdida total o parcial de este sentido recuperen o potencien su capacidad de escucha.
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="./css/styles.css?n=0">
+    <script src="./js/script.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <img src="imagenes/logo_udec_3.png" >    
+        <h1>Mi PROYECTO</h1>
+        <h2>Ingeniería Mecatrónica</h2> 
+        <br><hr><br>
+    </header>
+
+    <nav> 
+        <ul> 
+           <li><a href="index.html">Inicio</a></li> 
+           <li><a href="glosario_fundamentos_ingenieria.html">Glosario Ingeniería</a></li> 
+           <li><a href="glosario_pensamiento_algoritmico.html">Glosario Algoritmos</a></li> 
+           <li><a href="glosario_pensamiento_sistemico.html">Glosario TGS</a></li> 
+        </ul>  
+     </nav> 
+
+     <br><hr><br>
+     <p class="DefProyecto">Este proyecto tiene un enfoque humano y busca apoyar a personas con desventajas naturales. Se centra en la transhumanización, que es la integración de tecnología en el cuerpo humano. En particular, se enfoca en mejorar la capacidad de escucha de aquellos con pérdida total o parcial de este sentido. Utilizaremos micrófonos para captar ondas de sonido y luego inyectar en los receptores cerebrales para restaurar o potenciar la audición, o en los posibles casos la restauración de partes mecánicas biológicas por sintéticas.
+.</p>
+     <img id="imagen_articulo1" src="imagenes/fachada_sede_udec.png">
+     <br><hr><br>
+
+    <!-- Tabla de Contenidos -->
+    <DIV id="tabla-contenidos">
+        <h2>Contenido</h2>
+        <ul>
+            <li><a href="#objetivos">OBJETIVOS</a></li>
+            <li><a href="#justificacion">1. JUSTIFICACION</a>
+            <ul>
+                <li><a href="#situacion-problematica">1.1. Situación Problémica</a></li>
+                <li><a href="#analisis-situacion-actual">1.2. Análisis de la situación actual</a>
+                <ul>
+                    <li><a href="#Estudios-preliminares">1.2.1. Estudios preliminares</a></li>
+                    <li><a href="#Instrumentos-para-investigacion">1.2.2.	Instrumentos para investigación y levantamiento de información</a></li>
+                    <li><a href="#Encuesta">1.2.3.	Encuesta</a></li>
+                    <li><a href="#Conclusiones-encuesta">1.2.4.	Conclusiones de la encuesta</a></li>
+                    <li><a href="#Diagrama-Espina-de-Pescado">1.2.5.	Diagrama Espina de Pescado</a></li>
+                </ul></li>
+            </ul></li>
+            <li><a href="#marco-teorico">2.	MARCO TEORICO CONCEPTUAL</a>
+            <ul>
+                <li><a href="#teoria-de-proyectos">2.1.Conceptos y terminología asociada con el proyecto</a></li>
+                <li><a href="#normativa-actual">2.2. Normativa aplicable al proyecto</a></li>
+            </ul></li>
+            <li><a href="#Disciplinas">3. DISCIPLINAS QUE INTERVIENEN EN EL PROYECTO</a></li>
+      
+            <li><a href="#propuesta">4. PROPUESTA</a></li>
+            <li><a href="#Referencias-Bibliográficas">5. Referencias Bibliográficas</a>
+
+        </ul>
+    </DIV>
+
+    <!-- Contenido Principal -->
+    <main>
+        <section id="objetivos">
+            <h2 class="Titulo1">Objetivos</h2>
+            <!-- ---------------------------------------------->
+            <p class="Parrafo1">Objetivo principal del proyecto...</p>
+            <p class="Parrafo2">Objetivo principal del proyecto...</p>            
+            <ul class="Parrafo1">
+                <li>Mejorar la calidad de vida</li>
+                <li>Transhumanizar y crear simbiosis humano-maquina</li>
+                <li>Restaurar o mejorar la capacidad auditiva</li>
+            </ul>
+            <button onclick="scrollToTop()">Volver a la Tabla de Contenidos</button>
+        </section>
+
+        <section id="justificacion">
+            <h2 class="Titulo1">1. Justificación</h2>
+            <!-- ---------------------------------------------->
+
+            <article id="situacion-problematica" class="SubCapituloTema">
+                <h3 class="Subtitulo1">1.1. Situacion problematica</h3>
+                <!-- ---------------------------------------------->
+
+                <p class="Parrafo1">Existen diferentes formas de apoyar a la industria que busca el mejoramiento de la
+                    calidad de vida de personas con desventajas naturales. La insuficiencia o la pérdida de
+                    algunos de nuestros sentidos es algo que no podremos comprender en carne propia y que
+                    no deberíamos, por supuesto. Pero para algunas personas no hay opción, ya sea por
+                    accidentes o situaciones en su ADN y malformaciones. Algunas personas no ven ni
+                    sienten el mundo como lo hacemos nosotros, lo que supone una desventaja que queremos
+                    convertir o complementar en una súper habilidad. La transhumanización es un camino ya
+                    amplio y bien digerido por la academia mundial y es un adelanto importante en la
+                    simbiosis humano-máquina. Aprovechándose de los grandes saltos académicos en esta
+                    área, queremos comprender, atender y apoyar la ingeniería detrás de la digitalización de
+                    fenómenos ambientales y físicos. Luego, estos fenómenos serán incorporados dentro de
+                    un cerebro humano y correctamente codificados para que este cerebro los entienda como
+                    algo natural, y si es posible, para que sean mejorados o amplificados. Nuestro campo de
+                    acción es la escucha humana: la captación de ondas de sonido en el ambiente, tal cual lo
+                    haría un oído humano, pero por medio de un micrófono.</p>
+                <p class="Parrafo1">El transhumanismo es un movimiento que propone el uso de la tecnología disponible para
+                    trascender los límites de las capacidades humanas normales. En otras palabras, busca
+                    mejorar al ser humano mediante la integración de tecnología en nuestro cuerpo y mente.
+                    Uno de los enfoques clave del transhumanismo es el mejoramiento humano, que implica
+                    la aplicación de avances tecnológicos para superar las limitaciones naturales del cuerpo
+                    humano. En el contexto de la pérdida de los sentidos, como la vista o el oído, el
+                    transhumanismo ofrece una perspectiva interesante. Aquí hay algunos puntos relevantes:</p>
+                <p class="Parrafo1">tercer párrafo....</p>
+
+            </article>
+
+            <article id="analisis-situacion-actual" class="SubCapituloTema">
+                <h3 class="Subtitulo1">1.2. Análisis de la situación actual</h3>
+                <!-- ---------------------------------------------->
+
+                <p class="Parrafo1">El problema principal que se plantea aquí es la insuficiencia o pérdida de algunos
+                    de nuestros sentidos, como la vista o el oído. Algunas personas, debido a
+                    accidentes o malformaciones genéticas, no experimentan el mundo de la misma
+                    manera que aquellos con todos sus sentidos intactos. Esta desventaja se convierte
+                    en un desafío que se busca abordar mediante la transhumanización, un campo de
+                    estudio que busca fusionar la tecnología con el cuerpo humano. En particular, el
+                    enfoque aquí es la escucha humana.</p>
+                <p class="Parrafo1">segundo párrafo...</p>
+                <p class="Parrafo1">tercer párrafo....</p>
+
+            </article>
+           
+            <button onclick="scrollToTop()">Volver a la Tabla de Contenidos</button>
+        </section>
+
+
+
+        <section id="marco-teorico">
+            <h2 class="Titulo1">2.	MARCO TEORICO</h2>
+            <!-- ---------------------------------------------->
+
+            <article id="teoria-de-proyectos" class="SubCapituloTema">
+                <h3 class="Subtitulo1">2.1.Conceptos y terminología asociada con el proyecto</h3>
+            <!-- ---------------------------------------------->
+
+                <p class="Parrafo2">A Continuación algunos términos claves para la comprensión de este documento. </p>
+                    Enfoque humano: El enfoque se refiere a la concentración o atención dirigida
+                    hacia un tema o tarea particular. El proyecto se centra en ayudar a personas con
+                    desventajas naturales. </p>
+                    Insuficiencia o pérdida de sentidos: Algunas personas no ven ni sienten el
+                    mundo como la mayoría debido a accidentes o malformaciones. </p>
+                    Transhumanización: Explora la simbiosis entre humanos y máquinas para
+                    mejorar capacidades. </p>
+                    Escucha humana: Busca recuperar o potenciar la capacidad de escucha en
+                    personas con pérdida auditiva. </p>
+                    Neuronas y sinapsis: Las células nerviosas que transmiten información en el
+                    cerebro. </p>
+                    Procesamiento de la información: Interpretación y análisis de datos por
+                    diferentes áreas cerebrales. </p>
+                    Memoria a corto y largo plazo: Almacenamiento temporal y duradero de
+                    información. </p>
+                    Plasticidad cerebral: Capacidad del cerebro para adaptarse y cambiar. </p>
+                    Proyecto: Un proyecto es un conjunto de actividades planificadas y coordinadas
+                    para lograr un objetivo específico. </p>
+                    Serendipia: La serendipia es el descubrimiento afortunado e inesperado de algo
+                    valioso mientras se busca algo diferente. </p>
+                    Industria: La industria se refiere al conjunto de actividades económicas
+                    relacionadas con la producción, fabricación y distribución de bienes y servicios. </p>
+                    Calidad de vida: La calidad de vida es la percepción general de bienestar y
+                    satisfacción que una persona tiene en su vida, considerando aspectos como salud,
+                    elaciones y entorno. </p>
+                    Desventajas naturales: Son las limitaciones o dificultades inherentes a una
+                    situación o lugar debido a factores naturales, como el clima o la geografía. </p>
+                    Insuficiencia: La insuficiencia se refiere a la falta o incapacidad de cumplir con
+                    ciertos requisitos o expectativas. </p>
+                    Sentidos: Los sentidos son las capacidades perceptivas del cuerpo humano, como
+                    la vista, el oído, el olfato, el gusto y el tacto. </p>
+                    ADN: El ácido desoxirribonucleico (ADN) es una molécula presente en las
+                    células que contiene la información genética y determina las características
+                    hereditarias. </p>
+                    Malformaciones: Son anomalías en la estructura o forma de un órgano o parte del
+                    cuerpo. </p>
+                    Desventaja: Una desventaja es una situación o característica que coloca a alguien
+                    en una posición menos favorable. </p>
+                    Súper habilidad: Se refiere a una habilidad excepcional o sobresaliente en una
+                    persona. </p>
+                    Transhumanización: Es la idea de mejorar o trascender las limitaciones humanas
+                    mediante tecnología o modificaciones biológicas. </p> 
+                    Simbiosis: La simbiosis es una relación beneficiosa entre dos organismos o
+                    sistemas diferentes que viven juntos. </p>
+                    Humano-máquina: Se refiere a la integración de tecnología o dispositivos en el
+                    cuerpo humano. </p>
+                    Digitalización: La digitalización es la conversión de información analógica
+                    (como ondas de aire) a formato digital. </p>
+                    Físicos: En este contexto, se refiere a las leyes y principios que rigen el
+                    comportamiento del universo. </p>
+                    Cerebro humano: El órgano central del sistema nervioso que controla funciones
+                    cognitivas, emocionales y motoras. </p>
+                    Codificación: En informática, se refiere a escribir instrucciones en un lenguaje de
+                    programación para crear software. </p>
+                    Capacidad de escucha: Es la habilidad de prestar atención y comprender lo que
+                    alguien está comunicando verbal o no verbalmente. </p>
+                    Neuronas: Son células especializadas en transmitir señales eléctricas en el
+                    cerebro y el sistema nervioso. </p>
+                    Sinapsis: Es la conexión funcional entre neuronas, donde se transmiten señales
+                    químicas. </p>
+                    Comunicación cerebral: La forma en que las neuronas se comunican entre sí
+                    para procesar información. </p>
                     </p>
-          </article>
-          <div cuadro1>
-               <div redes>
-                    <ul>
-                         <h4>Nuestras redes sociales</h4>
-                         <li><a>Facebook</a></li>
-                         <li><a>Instagram</a></li>
-                         <li><a>Linkedin</a></li>
-                    </ul>
-               <div Publicaciones>
-                    <ul>
-                         <h4>Historial de publicaciones</h4>
-                         <li>01 de septiembre<p>Texto de Publicación del 01 de septiembre</p></li>
-                         <li>15 de septiembre<p>Texto de Publicación del 15 de septiembre</p></li>
-                    </ul>
+            </article>
 
-               </div>
-          </div>
+            <article id="normativa-actual" class="SubCapituloTema">
+                <h3 class="Subtitulo1">2.2. Normativa aplicable al proyecto</h3>
+            <!-- ---------------------------------------------->
 
-     </body>
-     <footer>
-     <div class="footer-text">
-          <p>&copy; UDEC  | Todos los derechos reservados | 2024 | David Agudelo </p>
-     </div>
-     </footer>
+            <p class="Parrafo2">Principales Normas y Regulaciones en Colombia:
+                1. Decreto 4725 de 2005: Este decreto regula el régimen de registros sanitarios,
+                permisos de comercialización y vigilancia sanitaria de dispositivos médicos en
+                Colombia. Establece los requisitos y procedimientos que deben cumplir los
+                fabricantes, importadores y comercializadores para garantizar la seguridad y
+                eficacia de los dispositivos médicos.
+                2. Invima (Instituto Nacional de Vigilancia de Medicamentos y Alimentos):
+                Es la entidad encargada de la regulación y vigilancia de los dispositivos médicos
+                implantables en Colombia. Todos los dispositivos deben obtener la certificación y
+                aprobación de Invima antes de su comercialización.
+                3. Resolución 4816 de 2008: Regula el Programa Nacional de Tecnovigilancia,
+                que es un sistema de vigilancia poscomercialización que permite identificar y
+                gestionar los riesgos asociados con el uso de dispositivos médicos, incluyendo los
+                implantes.</p>
+        </article>
+
+            <button onclick="scrollToTop()">Volver a la Tabla de Contenidos</button>
+
+        </section>
+
+
+
+    </main>
+</body>
 </html>
