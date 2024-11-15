@@ -70,10 +70,6 @@ body {
     text-decoration: none;
 }
 
-.nav__menu {
-    margin-left: auto;
-    cursor: pointer;
-    display: none;
 }
 
 .nav__img {
