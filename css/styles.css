@@ -33,7 +33,32 @@ nav{
     margin: 10px 0;
 }
 
+/* Tabla de contenidos */
+#tabla-contenidos {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+#tabla-contenidos h2 {
+    color: #4a90e2;
+}
+
+#tabla-contenidos ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#tabla-contenidos ul li {
+    margin: 8px 0;
+}
+
+#tabla-contenidos ul li a {
+    text-decoration: none;
+    color: #4a90e2;
+}
 
 /* Sección Capítulo */
 section {
@@ -98,4 +123,3 @@ button:hover {
         padding: 15px;
     }
 }
-
