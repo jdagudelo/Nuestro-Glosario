@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <script src="./js/script.js"></script>
+    <script type="text/javascript" src="js/funciones_validacion.js"></script>
+
+    <link rel="shortcut icon" href="imagenes/icon_ucun.png">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <meta content="text/html; charset=utf-8" http-equiv="content-type">
+          <meta name="author" content="David Agudelo">
+          <meta name="description" content="Pagina WEB de mi glosario personal, correspondiente a la asignatura de Sistemas ingenieria mecatronica, ingeniería de sistemas, UDEC">
+
+          <meta name="keywords" content="Glosario, web, Microprocesadores, Ingeniería, Sistemas, Udec, Ucun, Universidad, mecatronica">
+          <title>Proyecto Mecatronica</title>
+
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="apple-touch-icon" sizes="120x120" href="./imagenes/icon/apple-touch-icon.png">
+        <link rel="manifest" href="./imagenes/icon/site.webmanifest">
+        <link rel="mask-icon" href="./imagenes/icon/safari-pinned-tab.svg" color="#5bbad5">
+
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="stylesheet" href="./css/styles.css?n=0">
+        <script src="./js/script.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <img src="imagenes/logo_ucun_1_75.png">
+        <h1>Formulario para envio de datos personales</h1>
+        <h2>Por:  David Agudelo, Sheccid Avila y Jimmy Castillo</h2>
+        <br><hr><br>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="glosario_fundamentos_de_ingenieria.html">Glosario Ingeniería</a></li>
+            <li><a href="glosario_pensamiento_algoritmico.html">Glosario Algoritmos</a></li>
+            <li><a href="glosario_tgs.html">Glosario TGS</a></li>
+        </ul>
+    </nav>
+
+    <br><hr><br>
+    <p class="DefProyecto">
+    Este formulario demuestra los conocimeintos obtenidos en las clases de Pensamiento Algoritmico para la creacion de entradas de datos.
+.   </p>
+    <br><hr><br>
+
+        </article>
+        </section>
+        <h2>Formulario de Datos Personales</h2>
+        <form id="miniformulario" name="miniformulario" class="formulario" method="get" onsubmit="return validarDatos()" action="mantenimiento.html" >
+
+            <label for="nombre">Nombre...</label>
+            <input type="text" id="nombre" name="nombre" placeholder="ingrese el Nombre..." /><img width="20" height="20"  style='visibility: hidden;' /><br/>
+
+            <label for="apellido">Apellidos</label>
+            <input type="text" id="apellido" name="apellido" placeholder="ingrese el Apellido..."/><img width="20" height="20"  style='visibility: hidden;' /><br/>
+            <hr>
+            <input type="submit"  value="Enviar..." />
+            <input type="button" value="Reiniciar datos" onclick="resetearDatos()">
+        </form>
+    </main>
+</body>
+</html>
